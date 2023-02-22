@@ -9,12 +9,18 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --fuente-encodeSansC: 'Encode Sans Condensed', sans-serif;
+   --fuente-montserrat: 'Montserrat', sans-serif;
+   --fuente-Open-Sans: 'Open Sans', sans-serif;
+   --fuente-Raleway: 'Raleway', sans-serif;
+
+
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    font-family: var(--fuente-encodeSansC);
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -42,13 +48,99 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+display: flex;
+justify-content: space-between;
+background:var(--cor-de-fundo) ;
+align-items: center;
+position: sticky;
+top: 1px;
+}
+.menu__header{
+    display: flex;
+justify-content: space-around;
+padding-left: 2rem;
+
+align-items: center;
+}
+.menu__header img{
+    width: 33px;
+    height: 33px;
+}
+.menu__title{
+padding-left: 2rem ;
+font-size: 2rem;
+}
+.menu__nav{
+display: flex;
+align-items: center;
+}
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    padding-right: 5rem;
 
 }
+.menu__list__item{
+
+    background:#F5F5F5;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #0b0b0b;
+    padding: 0.5rem;
+    transition: all .1s ease-in-out;
+    margin-right: 0.5rem;
+    font-weight: 500 ;
+    font-size: 1rem;
+    
+}
+.menu__list__item:hover{
+    cursor: pointer;
+    background: #636262;
+
+}
+.menu__list__item__contato{
+    padding-right: 2rem;
+}
+
+
+
 
 /*Sección Title*/
 
 section.title{
+   display: flex;
+}
+.title__div{
+display: flex ;
+flex-direction: row-reverse;
+}
+.title__profile{
+    width: 368px;
+    height: 368px;
+    margin-right: 5rem;
+}
+.title__container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    justify-content: left;
 
+}
+.title__network{
+    display: flex;
+    flex-direction: row;
+}
+.title__network__item{
+    padding-right: 2rem;
+}
+.title__bio{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.title__subsection{
+    font-weight: 500;
+    font-size: 1.5rem;
+    justify-content: center;
 }
 
 /*Sección About*/
