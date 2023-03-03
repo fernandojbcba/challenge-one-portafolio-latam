@@ -21,9 +21,11 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: var(--fuente-encodeSansC);
+    cursor: pointer;
     margin: 0;
     padding: 0;
     line-height: 1;
+    width: 100vw;
 }
 ol, ul,li {
     list-style: none;
@@ -32,18 +34,12 @@ a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
-
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
+.todo {
+    margin: 0 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 
 /*Sección Menu*/
 
@@ -52,15 +48,16 @@ display: flex;
 justify-content: space-between;
 background:var(--cor-de-fundo) ;
 align-items: center;
-position: sticky;
-top: 1px;
+align-content: flex-end;
+height: 10vh;
+
 }
 .menu__header{
     display: flex;
-justify-content: space-around;
+justify-content: space-between;
 padding-left: 2rem;
-
 align-items: center;
+color: #464646;
 }
 .menu__header img{
     width: 33px;
@@ -124,6 +121,7 @@ flex-direction: row-reverse;
     flex-direction: column;
     margin-left: 3rem;
     justify-content: left;
+    
 
 }
 .title__network{
@@ -134,43 +132,59 @@ flex-direction: row-reverse;
     padding-right: 2rem;
 }
 .title__bio{
+
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 52px;
 }
 .title__subsection{
     font-weight: 500;
     font-size: 1.5rem;
     justify-content: center;
+    width: 60%;
 }
 
 /*Sección About*/
 
 section.about{
-
+   background:  #EAF2FD;
+   padding: 10px 153px;
 }
-
+.about__title{
+    font: var(--fuente-montserrat);
+font-weight: 700;
+font-size: 32px;
+}
+.about__paragraph{
+    font: var(--fuente-encodeSansC);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+section.skills{
+    padding: 10px 153px;
+}
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+    padding: 10px 153px;
 }
 
 /* Experiencia Académica*/
 
 section.academic{
-
+    padding: 10px 153px;
 }
 
 /* experiencia*/
 
 section.experience{
-
+    padding: 10px 153px;
 }
 
 /*Contacto*/
 
 section.formcontato{
-
+padding: 10px 153px;
 }
 
 /*footeer*/
