@@ -35,7 +35,7 @@ a{
     color: var(--cor-de-link);
 }
 .todo {
-    margin: 0 16px 0 16px;
+    margin: 0 5px 0 5px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -55,7 +55,7 @@ height: 10vh;
 .menu__header{
     display: flex;
 justify-content: space-between;
-padding-left: 2rem;
+padding-left: 0.5rem;
 align-items: center;
 color: #464646;
 }
@@ -64,15 +64,15 @@ color: #464646;
     height: 40px;
 }
 .menu__title{
-padding-left: 2rem ;
-font-size: 2rem;
+padding-left: 0.5rem ;
+font-size: 16px;
 }
 .menu__nav{
 display: flex;
 align-items: center;
 }
 .menu__list{
-    display: flex;
+    display: none;
     flex-direction: row;
     padding-right: 5rem;
 
@@ -96,7 +96,7 @@ align-items: center;
 
 }
 .menu__list__item__contato{
-    padding-right: 2rem;
+    padding-right: 14px;
 }
 
 
@@ -109,17 +109,17 @@ section.title{
 }
 .title__div{
 display: flex ;
-flex-direction: row-reverse;
+flex-direction: column;
 }
 .title__profile{
-    width: 368px;
-    height: 368px;
-    margin-right: 5rem;
+    width: 98px;
+    height: 98px;
+    margin-right: 0rem;
 }
 .title__container{
     display: flex;
     flex-direction: column;
-    margin-left: 3rem;
+    margin-left: 0.5rem;
     justify-content: left;
     
 
@@ -129,39 +129,62 @@ flex-direction: row-reverse;
     flex-direction: row;
 }
 .title__network__item{
-    padding-right: 2rem;
+    padding-right: 0.5rem;
 }
 .title__bio{
 
     font-weight: 700;
-    font-size: 52px;
+    font-size: 22px;
 }
 .title__subsection{
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 14px;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 
 /*Sección About*/
 
 section.about{
    background:  #EAF2FD;
-   padding: 10px 153px;
+   /* padding: 10px 153px; */
 }
 .about__title{
     font: var(--fuente-montserrat);
 font-weight: 700;
-font-size: 32px;
+font-size: 22px;
 }
 .about__paragraph{
     font: var(--fuente-encodeSansC);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
 }
 section.skills{
-    padding: 10px 153px;
+  /* padding: 10px 153px; */
+  display: flex;
+  flex-direction: column;
+  
+}
+.skills__line{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    padding:0  10px 0 10px;
+}
+.skills__box{
+    width: 156px;
+    height: 118px;
+    background-color: #ffffff;
+    margin: 0 5px 10px 5px;
+    border: #000 solid 1px;
+    border-radius: 5%;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+
+}
+.skills__img img{
+    width: 66px;
+   
 }
 /*Sección Hobbies*/
 
