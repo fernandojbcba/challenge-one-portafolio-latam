@@ -197,15 +197,14 @@ section.academic{
     padding-left: 15px;
 }
 .academic__courses{
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-padding:0  10px 0 10px;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding:0  10px 0 10px;
+    align-items: center;
 }
 .academic__courses__box{
     display: flex;
-   
     justify-content: center;
     width: 296px;
     height: 230px;
@@ -218,40 +217,124 @@ align-items: center;
 }
 
 .academic__courses__list{
- padding-left: 0px; 
+    padding-left: 0px; 
  
 }
 .academic__courses__list li{
- display: flex;
- justify-content: center;
+    display: flex;
+    justify-content: center;
  
  padding-left: 0px;
 
 }
-    .academic__courses__item__img img{
-        width: 84px;
-        height: 105px;
-    }
+.academic__courses__item__img img{
+    width: 84px;
+    height: 105px;
+}
 
 section.experience{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.experiencie__box{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    border: #000 solid 1px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+
+}
+.experience__img{
+    width: 296px;
+}
+.experience__btn--repo{
+    font-weight: 600;
+    border: 2px solid #2A7AE4;
+    padding: 0.8rem 1.3rem;
+    width: 30vw;
+    background-color: transparent;
+
+}
+
+.experience__btn--demo{
+    color: white;
+    font-weight: 600;
+    border: 2px solid #2A7AE4;
+    padding: 0.8rem 1.3rem;
+    width: 30vw;
+    background-color: #2A7AE4;
 }
 
 
-
-
-/*Contacto*/
-
-section.formcontato{
-padding: 10px 153px;
+section.formcontacto {
+    background-color: #EAF2FD;
+    padding: 2rem 2.5rem;
 }
 
-/*footeer*/
-
-section.footer{
-   
+.formcontacto__img{
+    display: none;
 }
+
+.formcontacto__subtext {
+    font-weight: 500;
+}
+
+.formcontacto__form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+}
+
+.formcontacto__input,
+.formcontacto__textarea {
+    background-color: var(--cor-de-fundo-2);
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-shadow: 0.4px 2px 4px #000;
+    
+}
+
+.formcontacto__input:focus,
+.formcontacto__textarea:focus {
+    border-bottom: 2px solid white;
+    outline: none;
+    box-shadow: none;
+}
+
+.formcontacto__btn {
+    font-weight: 600;
+    border: 2px solid #2A7AE4;
+    padding: 0.8rem 1.3rem;
+    width: 50vw;
+    background-color: #2A7AE4;
+    color: white;
+    margin: 0 auto;
+}
+
+
+    section.footer {
+    
+    }
+
+    .footer__rodape {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .footer__rodape p {
+        margin: 0 auto;
+       
+    }
+
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
