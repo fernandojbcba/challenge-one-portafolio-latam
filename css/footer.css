@@ -1,0 +1,14 @@
+section.footer {
+    
+}
+
+.footer__rodape {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+.footer__rodape p {
+    margin: 0 auto;
+   
+}
